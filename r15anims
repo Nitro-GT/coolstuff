@@ -10,7 +10,7 @@ _G.IDs={
     Swim        = 10921138209,
     SwimIdle    = 616166655,
     Walk        = 1132510133,
-    Dance   = 12874447851,
+    Dance       = 12874447851,
 }
 local IDs = _G.IDs
 --[[
