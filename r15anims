@@ -10,7 +10,9 @@ _G.IDs={
     Swim        = 10921138209,
     SwimIdle    = 616166655,
     Walk        = 1132510133,
-    Dance       = 12874447851,
+    Dance2		= 10714360343,
+    Dance3		= 12874447851,
+
 }
 local IDs = _G.IDs
 --[[
@@ -119,8 +121,11 @@ game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId        = "htt
 game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId          = "http://www.roblox.com/asset/?id="..IDs.Swim
 game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId  = "http://www.roblox.com/asset/?id="..IDs.SwimIdle
 game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId      = "http://www.roblox.com/asset/?id="..IDs.Walk
-if IDs.Dance ~= nil then
-game.Players.LocalPlayer.Character.Animate.dance3.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance 
+if IDs.Dance3 ~= nil then
+game.Players.LocalPlayer.Character.Animate.dance3.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance3
+end
+if IDs.Dance2 ~= nil then
+game.Players.LocalPlayer.Character.Animate.dance2.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance2
 end
 game.Players.LocalPlayer.Character.Animate.idle.Animation2.Weight.Value   = "1"; game.Players.LocalPlayer.Character.Animate.idle.Animation1.Weight.Value   = "10"
      local plr =game.Players.LocalPlayer
@@ -144,9 +149,14 @@ game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId          = "htt
 game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId  = "http://www.roblox.com/asset/?id="..IDs.SwimIdle
 game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId      = "http://www.roblox.com/asset/?id="..IDs.Walk
 game.Players.LocalPlayer.Character.Animate.idle.Animation2.Weight.Value   = "1"; game.Players.LocalPlayer.Character.Animate.idle.Animation1.Weight.Value= "10"
-if IDs.Dance ~= nil then
-game.Players.LocalPlayer.Character.Animate.dance3.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance 
+if IDs.Dance3 ~= nil then
+game.Players.LocalPlayer.Character.Animate.dance3.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance3
 game.Players.LocalPlayer.Character.Animate.dance3.Animation2:Destroy()
 game.Players.LocalPlayer.Character.Animate.dance3.Animation3:Destroy()
+end
+if IDs.Dance2 ~= nil then
+game.Players.LocalPlayer.Character.Animate.dance2.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance2
+game.Players.LocalPlayer.Character.Animate.dance2.Animation2:Destroy()
+game.Players.LocalPlayer.Character.Animate.dance2.Animation3:Destroy()
 end
 end)
