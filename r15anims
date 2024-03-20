@@ -133,7 +133,11 @@ plr.CharacterAdded:Connect(function()
 repeat wait() until plr.Character:FindFirstChild("Animate")
 wait(.95)
 local IDs = _G.IDs
-
+local c = game:GetService("Players").LocalPlayer.Character
+   if c.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+print("r6 :)")
+else
+if _G.real == true then
 
 for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
     v:Stop()
@@ -158,5 +162,6 @@ if IDs.Dance2 ~= nil then
 game.Players.LocalPlayer.Character.Animate.dance2.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..IDs.Dance2
 game.Players.LocalPlayer.Character.Animate.dance2.Animation2:Destroy()
 game.Players.LocalPlayer.Character.Animate.dance2.Animation3:Destroy()
+end
 end
 end)
