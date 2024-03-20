@@ -1,5 +1,7 @@
 repeat task.wait() until game:IsLoaded()
     wait(.05)
+_G.R6 = false
+_G.real = true
 _G.IDs={
    ClimbAnim   = 10921132092,
     FallAnim    = 1132469004,
