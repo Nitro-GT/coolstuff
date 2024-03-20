@@ -131,7 +131,7 @@ game.Players.LocalPlayer.Character.Animate.idle.Animation2.Weight.Value   = "1";
      local plr =game.Players.LocalPlayer
 plr.CharacterAdded:Connect(function()
 repeat wait() until plr.Character:FindFirstChild("Animate")
-wait(.95)
+wait(.65)
 local IDs = _G.IDs
 
 
