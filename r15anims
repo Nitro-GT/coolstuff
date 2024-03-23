@@ -164,4 +164,5 @@ game.Players.LocalPlayer.Character.Animate.dance2.Animation2:Destroy()
 game.Players.LocalPlayer.Character.Animate.dance2.Animation3:Destroy()
 end
 end
+end
 end)
